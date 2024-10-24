@@ -3,7 +3,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\Shop_InfoRequest;
+use App\Http\Requests\ShopInfoRequest;
 use App\Models\Shop;
 use App\Models\Genre;
 use App\Models\Area;
@@ -100,7 +100,7 @@ class ShopController extends Controller
         return view('shop_edit', compact('shop', 'genres', 'areas'));
     }
     //店舗情報の変更処理
-    public function shop_update(shop_InfoRequest $request)
+    public function shop_update(ShopInfoRequest $request)
     {
         $user = Auth::user();
 

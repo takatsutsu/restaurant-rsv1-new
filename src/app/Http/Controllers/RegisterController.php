@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\RegisterRequest;
-use App\Http\Requests\Shop_AdminRequest;
+use App\Http\Requests\ShopAdminRequest;
 use Illuminate\Support\Facades\Auth;
 use App\Models\User;
 use Illuminate\Auth\Events\Registered;
@@ -38,7 +38,7 @@ class RegisterController extends Controller
 
     }
 
-    public function shop_admin_store(Shop_AdminRequest $request)
+    public function shop_admin_store(ShopAdminRequest $request)
     {
         if (Auth::user()->role !== 'admin' || Auth::user()->email_verified_at === null) {
             return redirect('/')->with('message', 'アクセスが許可されていません。');
