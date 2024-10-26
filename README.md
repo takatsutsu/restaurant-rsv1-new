@@ -25,7 +25,7 @@
 
 ## レポジトリー
 
-https://github.com/takatsutsu/restaurant-rsv1.git
+https://github.com/takatsutsu/restaurant-rsv1-new.git
 
 ## 他のレポジトリー
 
@@ -80,7 +80,7 @@ https://github.com/takatsutsu/restaurant-rsv1.git
 ![alt text](<スクリーンショット 2024-09-30 10.25.35.png>)
 ![alt text](<スクリーンショット 2024-09-30 10.26.04.png>)
 ![alt text](<スクリーンショット 2024-09-30 10.26.14.png>)
-![alt text](<スクリーンショット 2024-09-30 10.26.27-1.png>)
+![alt text](<スクリーンショット 2024-10-27 0.55.42.png>)
 
 ## ER 図
 
@@ -94,8 +94,8 @@ https://github.com/takatsutsu/restaurant-rsv1.git
    ※coachtech/laravel は環境によって異なる。
 - `$ `  
    ※[restaurant-rsv1]は任意のフォルダ
-git clone https://github.com/takatsutsu/restaurant-rsv1-new.git [restaurant-rsv1]
-**開発の履歴を残すために、個人個人のリモートリポジトリの url を変更。**
+  git clone https://github.com/takatsutsu/restaurant-rsv1-new.git [restaurant-rsv1]
+  **開発の履歴を残すために、個人個人のリモートリポジトリの url を変更。**
 
 - [restaurant-rsv1]名のリポジトリ―を GITHUB にて作成
 
@@ -321,9 +321,3 @@ DB_PASSWORD=laravel_pass
    ①Home  
    ②Logout  
    ③MyPage (一般会員マイページ)
-
-# restaurant-rsv1
-
-# restaurant-rsv1
-# restaurant-rsv1
-# restaurant-rsv1-new
