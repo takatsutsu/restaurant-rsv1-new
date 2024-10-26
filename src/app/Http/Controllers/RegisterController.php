@@ -35,7 +35,6 @@ class RegisterController extends Controller
             return redirect('/')->with('message', 'アクセスが許可されていません。');
         }
         return view('auth.shop_admin_register');
-
     }
 
     public function shop_admin_store(ShopAdminRequest $request)
@@ -45,14 +44,14 @@ class RegisterController extends Controller
         }
 
         $user = User::create([
-        'name' => $request->name,
-        'email' => $request->email,
-        'password' => bcrypt($request->password),
-        'role' => 'shop-admin',
+            'name' => $request->name,
+            'email' => $request->email,
+            'password' => bcrypt($request->password),
+            'role' => 'shop-admin',
         ]);
 
+        event(new Registered($user));
+
         return redirect('/')->with('message', '店舗管理者が登録されました。');
-
     }
-
 }
