@@ -7,7 +7,7 @@
 .shop_rese_box {
     display: flex;
     flex-wrap: wrap;
-    gap: 16px; /* カード間のスペースを設定 */
+    gap: 16px;
 }
 
 .shop_rese_card {

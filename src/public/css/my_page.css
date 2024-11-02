@@ -8,7 +8,7 @@
     width: 90%;
 }
 @media screen and (min-width: 769px) {
-.my_content { /* 修正ポイント */
+.my_content {
     display: flex;
     justify-content: space-between;
 }
@@ -31,7 +31,7 @@
 
 .my_rese_card-body {
     background-color: #ffffff;
-    padding: 20px;
+    padding: 12px;
 }
 
 .my_rese_card-title {
@@ -46,6 +46,7 @@
 
 .my_rese_qr {
     text-align: right;
+    margin-left: 10%;
 }
 
 .my_rese_update{
@@ -61,9 +62,10 @@
 
 .my_favo_card {
     border: 1px solid #ddd;
-    padding: 20px;
+    padding: 0 0 10px 0;
     border-radius: 10px;
     text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .my_favo_card img {
@@ -85,6 +87,7 @@
 .my_favo_heart-icon {
     width: 35px;
     height: 35px;
+    margin-left: 10%;
 }
 
 @media screen and (max-width: 768px) {
@@ -95,4 +98,3 @@
 }
 
 }
-
