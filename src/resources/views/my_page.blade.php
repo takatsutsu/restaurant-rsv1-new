@@ -49,7 +49,7 @@
                             <div class="my_favo_btn-group">
                                 <a href="/detail/{{ $favorite->shop_id }}" class="my_favo_btn my_favo_btn-content">詳しく見る</a>
                                 @if (Auth::check() && Auth::user()->hasVerifiedEmail())
-                                <a href="/favo_delete/{{ $favorite->shop_id }}" class="my_favo_favorite"><img src="{{ asset('images/filled-heart.png') }}" alt="お気に入り解除" class="my_favo_heart-icon"></a>
+                                <a href="/favo_delete/{{ $favorite->shop_id }}" class="my_favo_favorite"><img src="{{ asset('images/filled-heart.jpg') }}" alt="お気に入り解除" class="my_favo_heart-icon"></a>
                                 @endif
                             </div>
                         </form>

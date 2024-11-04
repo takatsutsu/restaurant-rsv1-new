@@ -56,9 +56,9 @@
                         <a href="/detail/{{ $shop->id }}" class="shop_btn shop_btn-content">詳しく見る</a>
                         @if (Auth::check() && Auth::user()->hasVerifiedEmail())
                         @if($shop->is_favorite)
-                        <a href="/favo_delete/{{ $shop->id }}" class="shop_btn-favorite"><img src="{{ asset('images/filled-heart.png') }}" alt="お気に入り解除" class="shop_heart-icon"></a>
+                        <a href="/favo_delete/{{ $shop->id }}" class="shop_btn-favorite"><img src="{{ asset('images/filled-heart.jpg') }}" alt="お気に入り解除" class="shop_heart-icon"></a>
                         @else
-                        <a href="/favo_store/{{ $shop->id }}" class="shop_btn-unfavorite"><img src="{{ asset('images/empty-heart2.png') }}" alt="お気に入りに追加" class="shop_heart-icon"></a>
+                        <a href="/favo_store/{{ $shop->id }}" class="shop_btn-unfavorite"><img src="{{ asset('images/empty-heart2.jpg') }}" alt="お気に入りに追加" class="shop_heart-icon"></a>
                         @endif
                         @endif
                     </div>
